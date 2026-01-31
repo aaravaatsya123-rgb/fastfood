@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aatsya's Fast Food Menu</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #fff8f0;
+  margin: 0;
+  color: #333;
+}
+
+.menu-title {
+  text-align: center;
+  font-size: 34px;
+  color: #ff2e2e;
+  margin: 40px 20px 30px;
+  font-weight: bold;
+}
+
+.category-title {
+  margin: 30px 0 15px 20px;
+  font-size: 24px;
+  color: #333;
+  border-left: 6px solid #ff9800;
+  padding-left: 10px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 0 20px 40px;
+}
+
+.menu-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  text-align: center;
+  border-left: 4px solid #ff2e2e;
+  border-right: 4px solid #ff2e2e;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+.menu-card h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.menu-card p {
+  margin-top: 6px;
+  color: #ff2e2e;
+  font-weight: bold;
+}
+
+.footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 25px 10px;
+  margin-top: 50px;
+}
+
+.back-link {
+  color: #ff9800;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.back-link:hover {
+  color: #ffd700;
+  text-decoration: underline;
+}
+
+/* ===== Mobile Responsiveness ===== */
+@media(max-width: 768px) {
+  .menu-title {
+    font-size: 28px;
+    margin: 30px 15px 25px;
+  }
+  .category-title {
+    font-size: 20px;
+    margin: 25px 15px 15px;
+  }
+  .menu-card h4 {
+    font-size: 16px;
+  }
+  .menu-card p {
+    font-size: 14px;
+  }
+}
+
+@media(max-width: 480px) {
+  .menu-title {
+    font-size: 24px;
+    margin: 25px 10px 20px;
+  }
+  .category-title {
+    font-size: 18px;
+    margin: 20px 10px 10px;
+  }
+  .menu-card {
+    padding: 12px;
+  }
+  .menu-card h4 {
+    font-size: 14px;
+  }
+  .menu-card p {
+    font-size: 12px;
+  }
+  .menu-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 0 10px 30px;
+  }
+  .footer {
+    padding: 20px 10px;
+  }
+}
+</style>
+</head>
+<body>
+
+<section id="menu">
+  <h2 class="menu-title">🍔 Aatsya’s Fast Food Menu</h2>
+
+  <!-- MOMOS -->
+  <h3 class="category-title">🥟 Momos</h3>
+  <div class="menu-grid">
+    <div class="menu-card"><h4>Veg Steam Momos</h4><p>₹40 / ₹60</p></div>
+    <div class="menu-card"><h4>Veg Fried Momos</h4><p>₹50 / ₹80</p></div>
+    <div class="menu-card"><h4>Veg Crunchy Momos</h4><p>₹60 / ₹100</p></div>
+    <div class="menu-card"><h4>Veg Chilly Momos</h4><p>₹100</p></div>
+    <div class="menu-card"><h4>Veg Gravy Momos</h4><p>₹120</p></div>
+  </div>
+
+  <!-- PANEER MOMOS -->
+  <h3 class="category-title">🧀 Paneer Momos</h3>
+  <div class="menu-grid">
+    <div class="menu-card"><h4>Paneer Steam Momos</h4><p>₹50 / ₹100</p></div>
+    <div class="menu-card"><h4>Paneer Fried Momos</h4><p>₹60 / ₹110</p></div>
+    <div class="menu-card"><h4>Paneer Crunchy Momos</h4><p>₹70 / ₹120</p></div>
+    <div class="menu-card"><h4>Paneer Chilly Momos</h4><p>₹130</p></div>
+    <div class="menu-card"><h4>Paneer Gravy Momos</h4><p>₹140</p></div>
+  </div>
+
+  <!-- NOODLES -->
+  <h3 class="category-title">🍜 Noodles</h3>
+  <div class="menu-grid">
+    <div class="menu-card"><h4>Veg Noodles</h4><p>₹40 / ₹60</p></div>
+    <div class="menu-card"><h4>Chilly Garlic Noodles</h4><p>₹60 / ₹120</p></div>
+    <div class="menu-card"><h4>Paneer Noodles</h4><p>₹80 / ₹140</p></div>
+    <div class="menu-card"><h4>Mushroom Noodles</h4><p>₹80 / ₹140</p></div>
+    <div class="menu-card"><h4>Mix Noodles</h4><p>₹80 / ₹140</p></div>
+  </div>
+
+  <!-- FRIED RICE -->
+  <h3 class="category-title">🍚 Fried Rice</h3>
+  <div class="menu-grid">
+    <div class="menu-card"><h4>Veg Fried Rice</h4><p>₹60 / ₹100</p></div>
+    <div class="menu-card"><h4>Chilly Garlic Fried Rice</h4><p>₹80 / ₹130</p></div>
+    <div class="menu-card"><h4>Mushroom Fried Rice</h4><p>₹80 / ₹140</p></div>
+    <div class="menu-card"><h4>Paneer Fried Rice</h4><p>₹80 / ₹140</p></div>
+    <div class="menu-card"><h4>Mix Fried Rice</h4><p>₹80 / ₹140</p></div>
+  </div>
+
+  <!-- SHAKES -->
+  <h3 class="category-title">🥤 Shakes</h3>
+  <div class="menu-grid">
+    <div class="menu-card"><h4>Banana Shake</h4><p>₹50</p></div>
+    <div class="menu-card"><h4>Mango Shake</h4><p>₹60</p></div>
+    <div class="menu-card"><h4>Strawberry Shake</h4><p>₹80</p></div>
+    <div class="menu-card"><h4>Chocolate Shake</h4><p>₹80</p></div>
+    <div class="menu-card"><h4>Oreo Shake</h4><p>₹80</p></div>
+  </div>
+
+  <!-- DRY/GRAVY -->
+  <h3 class="category-title">Dry/Gravy</h3>
+  <div class="menu-grid">
+    <div class="menu-card"><h4>Chilli Paneer</h4><p>₹160 / ₹180</p></div>
+    <div class="menu-card"><h4>Chilli Mushroom</h4><p>₹130 / ₹150</p></div>
+    <div class="menu-card"><h4>Manchurian</h4><p>₹120 / ₹140</p></div>
+    <div class="menu-card"><h4>Honey Chilli Potato</h4><p>₹130</p></div>
+    <div class="menu-card"><h4>Honey Chilli Cauliflower</h4><p>₹150</p></div>
+  </div>
+
+  <!-- OTHER ITEMS -->
+  <h3 class="category-title">🍔 Other Items</h3>
+  <div class="menu-grid">
+    <div class="menu-card"><h4>Veg Burger</h4><p>₹50</p></div>
+    <div class="menu-card"><h4>Veg Cheese Burger</h4><p>₹60</p></div>
+    <div class="menu-card"><h4>KurKej</h4><p>₹80</p></div>
+    <div class="menu-card"><h4>Veg Spring Rolls</h4><p>₹80</p></div>
+    <div class="menu-card"><h4>Crunchy Spring Rolls</h4><p>₹80</p></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p><a href="homepage.html" class="back-link">⬆ Back to the HomePage</a></p>
+  <p>© 2026 Aatsya’s Fast Food | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
