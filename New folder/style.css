@@ -1,0 +1,93 @@
+body {
+  background: linear-gradient(180deg,#000,#300000);
+  color: white;
+  font-family: Arial;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* UI */
+.ui {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+#hpBar {
+  width: 200px;
+  height: 20px;
+  border: 2px solid white;
+}
+
+#hp {
+  height: 100%;
+  width: 100%;
+  background: red;
+}
+
+/* Game Arena */
+#game {
+  width: 900px;
+  height: 400px;
+  margin: 20px auto;
+  border: 4px solid crimson;
+  background: radial-gradient(circle,#111,#000);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Player */
+#player {
+  font-size: 60px;
+  position: absolute;
+  bottom: 30px;
+  left: 100px;
+  transition: 0.1s;
+}
+
+/* Enemy */
+.enemy {
+  font-size: 50px;
+  position: absolute;
+  bottom: 30px;
+}
+
+/* Sword Effect */
+.sword {
+  position: absolute;
+  width: 80px;
+  height: 10px;
+  background: yellow;
+  transform: rotate(-20deg);
+  opacity: 0.8;
+}
+
+/* Particle Effect */
+.particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: orange;
+  border-radius: 50%;
+}
+
+/* Mobile Joystick */
+#joystick {
+  position: fixed;
+  bottom: 40px;
+  left: 40px;
+  width: 100px;
+  height: 100px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+#stick {
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
