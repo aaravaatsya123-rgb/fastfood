@@ -4,8 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aatsya's Fast Food</title>
+<link href="https://awards.infcdn.net/2024/circle_v3.css" rel="stylesheet"/>
+<link href="https://awards.infcdn.net/2024/r_rcm.css" rel="stylesheet"/>
+<link href="https://awards.infcdn.net/2024/r_gold.css" rel="stylesheet"/>
 <style>
-* {
+  * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -34,7 +37,7 @@ header h1 {
 nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 50px;
 }
 
 nav a {
@@ -48,6 +51,7 @@ nav a {
   padding: 80px 20px;
   background: linear-gradient(135deg, #ff2e2e, #ffb347);
   color: white;
+
 }
 
 .hero h2 {
@@ -89,7 +93,6 @@ nav a {
   background-color: #FF6F61;
   transition: 0.5s ease-in-out;
 }
-
 
 section {
   padding: 60px 40px;
@@ -200,27 +203,43 @@ footer {
     height: 200px;
   }
 }
+.awards{
+  display: inline-block;
+  display: flex;
+  justify-content: space-around;
+}
+.nav{
+  justify-content: space-around;
+display: flex;
+}
 </style>
 </head>
 <body>
 
 <header>
-  <h1>🍔 Aatsya's Fast Food</h1>
-  <nav>
+  <h1>🍔 Siya Fast Food</h1>
+  <nav class="nav">
     <a href="#home" class="h">Home</a>
     <a href="menu.html" class="h">Menu</a>
     <a href="#about" class="h">About</a>
     <a href="#contact" class="h">Contact</a>
+  <a href="#awards" class="h">Awards</a>
   </nav>
 </header>
 
 <div class="hero" id="home">
   <h2>Delicious Fast Food, Anytime 😋</h2>
-  <p>Order now from Zomato, Fatafat & Swiggy</p>
+  <p>Order now from Zomato & Swiggy</p>
   <button class="btn zomato" onclick="window.open('https://www.zomato.com')">Order on Zomato</button>
   <button class="btn swiggy" onclick="window.open('https://www.swiggy.com')">Order on Swiggy</button>
+  </div>
+<br>
+<div class="awards" id="awards">
+  <div id="circle_bw" data-length="32" class="circle_bw_black" onclick="if(event.target.nodeName.toLowerCase() != 'a') {window.open(this.querySelector('.circle_bw_link').href);return 0;}"> <p class="circle_bw_year">2025</p> <div class="circle_bw_name "> <a class="circle_bw_link" target="_blank" href="https://restaurant-guru.in/Aatsyas-fast-food-Solan"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="178px" height="178px" viewBox="0 0 178 178"> <defs> <path id="circle_bw_name-arc" d="M 12 89 a 77 77 0 0 0 154 0"></path> </defs> <text class="circle_bw_name_txt f14" fill="#000" text-anchor="middle"> <textPath startOffset="50%" xlink:href="#circle_bw_name-arc"> Aatsya's Fast Food </textPath> </text> </svg> </a> </div> <div class="circle_bw_nom "> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200px" height="200px" viewBox="0 0 200 200"> <defs> <path id="circle_bw_nom-arc1" d="M 30 100 a 70 70 0 1 1 140 0"></path> </defs> <text class="circle_bw_nom_txt f14" fill="#000" text-anchor="middle"> <textPath startOffset="50%" xlink:href="#circle_bw_nom-arc1">Best fast food</textPath> </text> </svg> </div> <a class="circle_bw_home" style="font-size: 0" href="https://restaurantguru.com" target="_blank">Restaurant Guru</a></div>
+<div id="b-rcircle" data-length="32" class=" b-rcircle_black " onclick="if(event.target.nodeName.toLowerCase() != 'a') {window.open(this.querySelector('.b-rcircle_r-link').href);return 0;}"> <a href="https://restaurant-guru.in/Aatsyas-fast-food-Solan" class="b-rcircle_r-link" target="_blank">Aatsya's Fast Food</a> <p class="b-rcircle_year">2025</p> <div class="b-rcircle_bottom b-rcircle_row-doubled "> <p class="b-rcircle_str1 ">Best fast</p> <p class="b-rcircle_str2 ">food</p> </div> <div class="b-rcircle_heading"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="144px" height="144px" viewBox="0 0 144 144"> <defs> <path id="b-rcircle-arc" d="M 12 72 a 60 60 0 0 0 120 0"></path> </defs> <text class="b-rcircle_heading__bottom b-rcircle_small " fill="#fff" text-anchor="middle"> <textPath startOffset="50%" xlink:href="#b-rcircle-arc"><a href="https://restaurantguru.com/" target="_blank" class="b-rcircle_heading__link">Restaurant Guru</a></textPath> </text> </svg> </div></div>
+<div id="b-gold" onclick="if(event.target.nodeName.toLowerCase() != 'a') {window.open(this.querySelector('.b-gold_r-link').href);return 0;}"> <a href="https://restaurant-guru.in/Aatsyas-fast-food-Solan" class="b-gold_r-link" target="_blank">Aatsya's Fast Food</a> <p class="b-gold_center">Best fast food</p> <a href="https://restaurantguru.com" class="b-gold__link" target="_blank">Restaurant Guru</a> <p class="b-gold_year">2025</p></div>
+<div> <img src="RestaurantGuru_Certificate1_preview.png" alt=""></div>
 </div>
-
 <section id="about">
   <h2>❤️ About Us</h2>
   <br>
@@ -258,4 +277,5 @@ footer {
 
 </body>
 </html>
+
 
